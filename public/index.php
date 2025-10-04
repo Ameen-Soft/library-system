@@ -16,7 +16,7 @@ session_start();
             <?php if($_SESSION['user_role'] === 'admin'){ ?>
                 <p><a href="admin/dashboard.php">go to Dashboard</a></p>
                 <?php }else?>
-                    <p><a href="">logout</a></p>
+                    <p><a href="auth/logout.php">logout</a></p>
                 <?php exit(); ?>
         <?php else: ?>
             <h1>Welcome to our PHP Auth System!</h1>
